@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_dhcp_probe
+
+import std::io
+use ltl_dhcp_probe as lib
+
+fn main() {
+    io::println("ltl_dhcp_probe demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
